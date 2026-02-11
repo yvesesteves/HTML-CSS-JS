@@ -1,0 +1,92 @@
+/* Configurações Gerais */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container do Título */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+/* Grid de Trabalhos */
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo dos Cards (LI principais) */
+ul > li {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-top: 5px solid #3498db;
+}
+
+ul > li:hover {
+  transform: translateY(-5px);
+}
+
+/* Links Principais */
+a {
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #1a5276;
+  text-decoration: underline;
+}
+
+/* Estilo das Sub-listas (Exercícios) */
+ul ul {
+  display: block; /* Volta ao normal dentro do card */
+  margin-top: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  grid-template-columns: 1fr; /* Força uma coluna só dentro do card */
+}
+
+ul ul li {
+  font-size: 0.9em;
+  border: none;
+  box-shadow: none;
+  padding: 5px 0;
+  background: transparent;
+}
+
+/* Rodapé */
+hr {
+  margin-top: 50px;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+p:last-child {
+  font-style: italic;
+  font-weight: bold;
+  color: #2c3e50;
+}
