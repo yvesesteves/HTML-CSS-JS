@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercício 3 - Cálculo de Peso Ideal</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+      }
+      .campo {
+        margin-bottom: 15px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculadora de Peso Ideal</h1>
+
+    <div class="campo">
+      <label for="altura">Altura (em centímetros):</label>
+      <input type="text" id="altura" placeholder="Ex: 175" />
+    </div>
+
+    <div class="campo">
+      <label>Sexo:</label>
+      <input type="radio" name="sexo" value="M" id="masc" checked />
+      <label for="masc">Masculino</label>
+      <input type="radio" name="sexo" value="F" id="fem" />
+      <label for="fem">Feminino</label>
+    </div>
+
+    <button type="button" id="btnCalcular">Calcular Peso Ideal</button>
+
+    <p id="resultado"></p>
+
+    <script>
+      const botao = document.querySelector("#btnCalcular");
+
+      botao.onclick = function () {
+        //resgatando a altura e convertendo para inteiro conforme instrução
+        let campoAltura = document.querySelector("#altura");
+        let altura = parseInt(campoAltura.value);
+
+        //buscando o nó correspondente ao sexo selecionado
+        let sexoSelecionado = document.querySelector(
+          "input[name='sexo']:checked",
+        ).value;
+
+        let pesoIdeal = 0;
+
+        //aplicação das fórmulas
+        if (sexoSelecionado === "M") {
+          pesoIdeal = 52 + 0.75 * (altura - 152.4);
+        } else {
+          pesoIdeal = 52 + 0.67 * (altura - 152.4);
+        }
+
+        const parSaida = document.querySelector("#resultado");
+
+        //exibição usando Template Strings
+        parSaida.textContent = `Para uma altura de ${altura} cm, o seu peso ideal é ${pesoIdeal.toFixed(2)} kg.`;
+      };
+    </script>
+
+    <hr />
+    <h2>Depuração do Código:</h2>
+    <img src="img3_ex3.jpg" alt="Depuração do código - ex3" />
+    <p><a href="../../index.html">Voltar para o menu principal</a></p>
+  </body>
+</html>
