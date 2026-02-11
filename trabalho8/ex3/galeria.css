@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dddddd;
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+
+nav {
+  background-color: #444;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 70%;
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.gallery-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  /* Sombra original cinza */
+  box-shadow: 3px 3px 5px #888888;
+  display: inline-block;
+  /* Transição para o efeito ficar suave */
+  transition: box-shadow 0.3s;
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabalho 8 - Exercício 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Exercício 2: Utilizando 'change'</h1>
+    <hr />
+
+    <div class="painel-selecao">
+      <h2>Selecione uma opção:</h2>
+
+      <label for="selectEstado">Estado:</label>
+      <select id="selectEstado" onchange="atualizarEstado()">
+        <option value="">Selecione...</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="RJ">Rio de Janeiro</option>
+      </select>
+
+      <p id="resultado">Você selecionou:</p>
+    </div>
+
+    <p><a href="../../index.html">Voltar para o menu principal</a></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

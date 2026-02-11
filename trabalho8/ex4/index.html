@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabalho 8 - Exercício 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Exercício 4: Cadastro de Usuário</h1>
+
+      <form id="formCadastro">
+        <div class="campo">
+          <label for="usuario">Usuário:</label>
+          <input type="text" id="usuario" name="usuario" />
+          <span id="msg-usuario" class="erro"
+            >O usuário deve ser preenchido</span
+          >
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha:</label>
+          <input type="password" id="senha" name="senha" />
+          <span id="msg-senha" class="erro">A senha deve ser preenchida</span>
+        </div>
+
+        <div class="campo">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+          <span id="msg-email" class="erro">O email deve ser preenchido</span>
+        </div>
+
+        <button type="button" onclick="validarFormulario()">Cadastrar</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <p><a href="../../index.html">Voltar para o menu principal</a></p>
+  </body>
+</html>

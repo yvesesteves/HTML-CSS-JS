@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 250px;
+  padding: 2px;
+  border: 2px solid #000000;
+}
+
+button {
+  padding: 2px 10px;
+  cursor: pointer;
+  background-color: #e1e1e1;
+  border: 1px solid #767676;
+}
+
+ol {
+  margin-top: 20px;
+  padding-left: 40px;
+}
+
+ol li {
+  background-color: #cfe2f3;
+  border: 1px solid #a4c2f4;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 10px;
+  width: 200px;
+  font-size: 1.1em;
+  cursor: pointer; /*indica que o item é clicável para remover */
+}
+
+/*efeito visual ao passar o mouse para indicar que pode remover */
+ol li:hover {
+  background-color: #f4cccc;
+  border-color: #ea9999;
+}

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trabalho 8 - Exercício 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Exercício 1: Lista Dinâmica de Interesses</h1>
+
+    <div class="interface">
+      <label for="interesse">Interesse:</label>
+      <input type="text" id="interesse" name="interesse" />
+      <button type="button" id="btnAdicionar">Adicionar</button>
+
+      <ol id="listaInteresses">
+        <li onclick="removerItem(this)">Shows</li>
+        <li onclick="removerItem(this)">Filmes</li>
+        <li onclick="removerItem(this)">Esportes</li>
+      </ol>
+    </div>
+
+    <p><a href="../../index.html">Voltar para o menu principal</a></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
