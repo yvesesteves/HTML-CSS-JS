@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 70%; /*ocupa 70% da largura */
+  margin: 20px auto; /* centralizando na tela */
+  background-color: white; /*fundo branco conforme pedido */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*estilização básica do nav p/ telas grandes*/
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/*media query para telas menores*/
+@media (max-width: 500px) {
+  main {
+    width: 100%; /*ocupa 100% da largura no celular */
+    margin: 0; /*remove as margens laterais */
+  }
+
+  nav {
+    display: none; /* desaparecento a barra de  navegacao*/
+  }
+}
